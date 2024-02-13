@@ -1,10 +1,11 @@
 'use strict';
+
 const subBtn = document.querySelector('.btn-subscribe');
 const inputField = document.querySelector('.input');
 const showError = document.querySelector('.email__label-error');
 // const text = document.querySelector('.thx');
 
-const text = document.querySelector('.container__sign-up');
+// const text = document.querySelector('.container__sign-up');
 
 let email;
 
@@ -29,39 +30,9 @@ const checkAdress = function (e) {
     showError.classList.remove('hidden');
     console.log('zły adres');
   } else if (isEmail && correctEmail) {
-    localStorage.setItem('email', JSON.stringify(inputField.value));
+    localStorage.setItem('email', inputField.value);
     window.location.href = './thx-side.html';
   }
 };
 
 subBtn.addEventListener('click', checkAdress);
-
-// second page //////////////////////////////////////////
-
-const subEmail = localStorage.getItem('email');
-
-const insertHTML = `<p class="margin__b-l">
-    A confirmation email has been sent to
-<strong>(...)</strong>. Please open it and click the
-button inside to confirm your subscription.
-</p>`;
-
-text.insertAdjacentHTML('beforeend', insertHTML);
-
-// document.addEventListener('DOMContentLoaded', function () {
-//   const subEmail = localStorage.getItem('email');
-//   if (email) {
-//     const text = document.querySelector('.thx');
-//     insertEmail(subEmail, text);
-//   }
-// });
-
-// const insertEmail = function (email, el) {
-//   const insertHTML = `<p class="margin__b-l">
-//     A confirmation email has been sent to
-// <strong>${email}</strong>. Please open it and click the
-// button inside to confirm your subscription.
-// </p>`;
-
-//   el.insertAdjacentHTML('beforeend', insertHTML);
-// };
