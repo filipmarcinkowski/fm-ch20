@@ -31,4 +31,23 @@ body {
 
 .main-container {
   background-color: var(--clr-neutral-000);
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 100rem;
+  border-radius: 3rem;
+}
+
+/* IMAGE CONTAINER */
+
+.container__img {
+  margin: 2rem;
+}
+
+.image {
+  display: block;
+}
+/* SIGN-UP CONTAINER */
+
+.container__sign-up {
+  margin: auto 4rem;
 }
