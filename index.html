@@ -19,7 +19,7 @@
     </title>
   </head>
   <body>
-    <main class="main-container">
+    <main class="main-container main">
       <div class="container__img">
         <img
           class="image"
@@ -28,33 +28,53 @@
         />
       </div>
       <div class="container__sign-up">
-        <h1>Stay updated!</h1>
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
-        <p class="benefits">Product discovery and building what matters</p>
-        <p class="benefits">Measuring to ensure updates are a success</p>
-        <p class="benefits">And much more!</p>
-        <div class="email__label-box">
+        <h1 class="margin__b-l">Stay updated!</h1>
+        <p class="margin__b-m">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+
+        <ul class="margin__b-l">
+          <li class="benefits margin__b-m">
+            <img
+              class="icon"
+              src="./assets/images/icon-list.svg"
+              alt="white list icon on orange background"
+            />
+            <p>Product discovery and building what matters</p>
+          </li>
+          <li class="benefits margin__b-m">
+            <img
+              class="icon"
+              src="./assets/images/icon-list.svg"
+              alt="white list icon on orange background"
+            />
+            <p>Measuring to ensure updates are a success</p>
+          </li>
+          <li class="benefits margin__b-m">
+            <img
+              class="icon"
+              src="./assets/images/icon-list.svg"
+              alt="white list icon on orange background"
+            />
+            <p>And much more!</p>
+          </li>
+        </ul>
+
+        <div class="email__label-box margin__b-s">
           <p class="email__label">Email address</p>
-          <p class="email__label-error hidden"></p>
+          <p class="email__label-error hidden">valid email required</p>
         </div>
-        <input placeholder="email@company.com" type="email" class="input" />
-        <a href="./thx-side.html" class="btn"
+        <input
+          placeholder="email@company.com"
+          type="email"
+          class="input margin__b-m"
+        />
+        <a href="./thx-side.html" class="btn btn-subscribe"
           >Subscribe to monthly newsletter</a
         >
       </div>
     </main>
-    <!-- Sign-up form start -->
 
-    <!-- Sign-up form end -->
-
-    <!-- Success message start -->
-
-    <!-- Thanks for subscribing! A confirmation ema
-      git il has been sent to
-    ash@loremcompany.com. Please open it and click the button inside to confirm
-    your subscription. Dismiss message -->
-
-    <!-- Success message end -->
     <script src="./script.js"></script>
   </body>
 </html>

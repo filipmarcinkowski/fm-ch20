@@ -11,7 +11,7 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-style: normal;
+  /* font-style: normal; */
   background-color: var(--clr-neutral-900);
   display: flex;
   justify-content: center;
@@ -22,19 +22,37 @@ body {
 
 :root {
   --clr-primary: hsl(4, 100%, 67%);
+  --clr-primary-light: hsl(4, 100%, 92%);
+  --clr-secondary: hsl(306, 100%, 67%);
 
   --clr-neutral-900: hsl(234, 29%, 20%);
   --clr-neutral-600: hsl(235, 18%, 26%);
   --clr-neutral-300: hsl(231, 7%, 60%);
   --clr-neutral-000: hsl(0, 0%, 100%);
+
+  /* margins */
+
+  --mb-s: 1rem;
+  --mb-m: 1.5rem;
+  --mb-l: 4rem;
 }
 
 .main-container {
   background-color: var(--clr-neutral-000);
+  border-radius: 3rem;
+  color: var(--clr-neutral-900);
+  font-size: 1.6rem;
+}
+
+.main {
   display: flex;
   flex-direction: row-reverse;
-  max-width: 100rem;
-  border-radius: 3rem;
+  max-width: 90rem;
+}
+
+.thx {
+  padding: 4rem;
+  max-width: 50rem;
 }
 
 /* IMAGE CONTAINER */
@@ -51,3 +69,86 @@ body {
 .container__sign-up {
   margin: auto 4rem;
 }
+
+h1,
+h3 {
+  font-size: 5.5rem;
+  font-weight: 700;
+}
+
+.benefits {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* LABELS */
+
+.email__label-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.email__label-error {
+  color: var(--clr-primary);
+}
+
+.hidden {
+  display: none;
+}
+
+/* EMAIL AND INPUT */
+
+.input {
+  width: 100%;
+  height: 5rem;
+  text-indent: 2rem;
+  border: 0.1rem solid var(--clr-neutral-300);
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.input__error {
+  border: 0.1rem solid var(--clr-primary);
+  background-color: var(--clr-primary-light);
+  color: var(--clr-primary);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  text-decoration: none;
+  background-color: var(--clr-neutral-900);
+  border-radius: 0.5rem;
+  color: var(--clr-neutral-000);
+  /* transition: background-color 0.6s; */
+}
+
+.btn:hover {
+  background: linear-gradient(
+    to bottom right,
+    var(--clr-secondary),
+    var(--clr-primary)
+  );
+}
+/* MARGINS */
+
+.margin__b-s {
+  margin-bottom: var(--mb-s);
+}
+.margin__b-m {
+  margin-bottom: var(--mb-m);
+}
+.margin__b-l {
+  margin-bottom: var(--mb-l);
+}
+
+/*  */
