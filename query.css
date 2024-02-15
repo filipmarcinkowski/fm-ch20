@@ -1,2 +1,33 @@
 @media (max-width: 50em) {
+  .main-container {
+    border-radius: 0;
+    margin: 0;
+    height: 100%;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    max-width: 37.5rem;
+  }
+
+  .container__img {
+    margin: 0;
+  }
+
+  h1,
+  h3 {
+    font-size: 4rem;
+  }
+
+  /************** thx-side ***************/
+  .grid {
+    height: 100%;
+    display: grid;
+  }
+
+  .confirmation-box,
+  .btn-box {
+    align-self: end;
+  }
 }
