@@ -3,8 +3,21 @@
 const subBtn = document.querySelector('.btn-subscribe');
 const inputField = document.querySelector('.input');
 const showError = document.querySelector('.email__label-error');
-
+const image = document.querySelector('.image');
 let email;
+
+// resolusion change if screen smaller than 800px
+
+const resolusion = function () {
+  image.src = `./assets/images/illustration-sign-up-${
+    window.innerWidth < 800 ? 'mobile' : 'desktop'
+  }.svg`;
+};
+
+window.onload = resolusion;
+window.onresize = resolusion;
+
+// /////////////////////////////////////////////////////
 
 const checkAdress = function (e) {
   e.preventDefault();

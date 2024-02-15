@@ -42,6 +42,7 @@ body {
   border-radius: 3rem;
   color: var(--clr-neutral-900);
   font-size: 1.6rem;
+  margin: 2rem;
 }
 
 .main {
@@ -64,6 +65,7 @@ body {
 .image {
   display: block;
 }
+
 /* SIGN-UP CONTAINER */
 
 .container__sign-up {
@@ -134,7 +136,7 @@ h3 {
 
 .btn:hover {
   background: linear-gradient(
-    to bottom right,
+    to right,
     var(--clr-secondary),
     var(--clr-primary)
   );
