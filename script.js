@@ -19,8 +19,7 @@ window.onresize = resolusion;
 
 // /////////////////////////////////////////////////////
 
-const checkAdress = function (e) {
-  e.preventDefault();
+const checkAdress = function () {
   const input = inputField.value;
   console.log('przycisk został nacisniety');
 
@@ -46,3 +45,9 @@ const checkAdress = function (e) {
 };
 
 subBtn.addEventListener('click', checkAdress);
+
+inputField.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') {
+    checkAdress();
+  }
+});
