@@ -3,9 +3,6 @@
 const subBtn = document.querySelector('.btn-subscribe');
 const inputField = document.querySelector('.input');
 const showError = document.querySelector('.email__label-error');
-// const text = document.querySelector('.thx');
-
-// const text = document.querySelector('.container__sign-up');
 
 let email;
 
@@ -24,11 +21,11 @@ const checkAdress = function (e) {
   if (input === '') {
     inputField.classList.add('input__error');
     showError.classList.remove('hidden');
-    console.log('wpisz adres');
+    console.log('enter your email');
   } else if (!isEmail || !correctEmail) {
     inputField.classList.add('input__error');
     showError.classList.remove('hidden');
-    console.log('zły adres');
+    console.log('wrong adress');
   } else if (isEmail && correctEmail) {
     localStorage.setItem('email', inputField.value);
     window.location.href = './thx-side.html';
